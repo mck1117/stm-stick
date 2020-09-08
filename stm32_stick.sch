@@ -517,17 +517,6 @@ F 3 "" H 9975 2875 50  0001 C CNN
 	1    9975 2875
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+3.3V #PWR0118
-U 1 1 5F5F8B85
-P 9975 2975
-F 0 "#PWR0118" H 9975 2825 50  0001 C CNN
-F 1 "+3.3V" V 9990 3103 50  0000 L CNN
-F 2 "" H 9975 2975 50  0001 C CNN
-F 3 "" H 9975 2975 50  0001 C CNN
-	1    9975 2975
-	0    1    1    0   
-$EndComp
 Text GLabel 3250 5400 2    50   Input ~ 0
 PA15
 Text GLabel 1650 6600 0    50   Input ~ 0
@@ -1052,6 +1041,7 @@ F 0 "J5" H 7993 5517 50  0000 C CNN
 F 1 "Conn_01x05" H 7993 5426 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8075 5100 50  0001 C CNN
 F 3 "~" H 8075 5100 50  0001 C CNN
+F 4 "N/A" H 8075 5100 50  0001 C CNN "LCSC"
 	1    8075 5100
 	-1   0    0    -1  
 $EndComp
@@ -1063,17 +1053,68 @@ F 0 "J6" H 9693 5492 50  0000 C CNN
 F 1 "Conn_01x05" H 9693 5401 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9775 5075 50  0001 C CNN
 F 3 "~" H 9775 5075 50  0001 C CNN
+F 4 "N/A" H 9775 5075 50  0001 C CNN "LCSC"
 	1    9775 5075
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9975 5275 10075 5275
-Text GLabel 1550 4100 0    50   Input ~ 0
+Text GLabel 850  4100 0    50   Input ~ 0
 BOOT0
 Wire Wire Line
-	1550 4100 1750 4100
+	850  4100 950  4100
 Text GLabel 8400 5300 2    50   Input ~ 0
 BOOT0
 Wire Wire Line
 	8400 5300 8275 5300
+$Comp
+L power:+5V #PWR0118
+U 1 1 5F5AA783
+P 9975 2975
+F 0 "#PWR0118" H 9975 2825 50  0001 C CNN
+F 1 "+5V" V 9990 3103 50  0000 L CNN
+F 2 "" H 9975 2975 50  0001 C CNN
+F 3 "" H 9975 2975 50  0001 C CNN
+	1    9975 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0125
+U 1 1 5F5ABE0F
+P 3750 1000
+F 0 "#PWR0125" H 3750 850 50  0001 C CNN
+F 1 "+5V" H 3765 1173 50  0000 C CNN
+F 2 "" H 3750 1000 50  0001 C CNN
+F 3 "" H 3750 1000 50  0001 C CNN
+	1    3750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5BC576
+P 950 4300
+F 0 "R?" H 1020 4346 50  0000 L CNN
+F 1 "10k" H 1020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 880 4300 50  0001 C CNN
+F 3 "~" H 950 4300 50  0001 C CNN
+F 4 "C25744" H 950 4300 50  0001 C CNN "LCSC"
+	1    950  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BC5E1
+P 950 4450
+F 0 "#PWR?" H 950 4200 50  0001 C CNN
+F 1 "GND" H 955 4277 50  0000 C CNN
+F 2 "" H 950 4450 50  0001 C CNN
+F 3 "" H 950 4450 50  0001 C CNN
+	1    950  4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4150 950  4100
+Connection ~ 950  4100
+Wire Wire Line
+	950  4100 1750 4100
 $EndSCHEMATC
