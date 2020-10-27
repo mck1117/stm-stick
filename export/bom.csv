@@ -1,0 +1,17 @@
+Comment,Designator,Footprint, LCSC
+8p,"C1,C2",Capacitor_SMD:C_0402_1005Metric,C1562
+2.2u,"C4,C3",Capacitor_SMD:C_0603_1608Metric,C23630
+10u,C5,Capacitor_SMD:C_0603_1608Metric,C19702
+100n,"C6,C8,C9",Capacitor_SMD:C_0402_1005Metric,C1525
+4.7u,C7,Capacitor_SMD:C_0603_1608Metric,C19666
+LED,D1,LED_SMD:LED_0603_1608Metric,C72038
+FTSH-105-01-F-DV-007-K,J1,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD,N/A
+Conn_01x20,"J2,J4",Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical,N/A
+6.29105E+11,J3,Connector_USB:USB_Micro-B_Wuerth_629105150521,N/A
+Conn_01x05,"J5,J6",Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,N/A
+330,R1,Resistor_SMD:R_0402_1005Metric,C25104
+10k,R2,Resistor_SMD:R_0402_1005Metric,C25744
+STM32F405RGTx,U1,Package_QFP:LQFP-64_10x10mm_P0.5mm,C15742
+AMS1117-3.3,U2,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+USBLC6-2SC6,U3,Package_TO_SOT_SMD:SOT-23-6,
+8MHz,Y1,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm,C115962
